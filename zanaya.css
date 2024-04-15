@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  background-image: url(images/portrait.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  color: white;
+  margin-top: 10px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  height: 250px;
+  margin: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+img {
+  width: 250px;
+}
+
+.intro {
+  height: 100px;
+  width: 250px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  background-image: url(images/flower.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  bottom: 282px;
+  color: white;
+  filter: opacity(0.8);
+  transition: 0.5s;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 27px;
+  background: rgb(27, 27, 27, 0.5);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+span {
+  font-weight: bold;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .intro {
+  height: 150px;
+  bottom: 282px;
+  background-image: url(images/flower.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: 0.5s;
+}
+
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+}
+
+
+@media (max-width: 1231px) {
+  img .intro {
+    width: 200px;
+  }
+
+  .intro {
+    height: 150px;
+    width: 250px;
+    bottom: 100px;
+    padding: 6px;
+    position: relative;
+  }
+
+  .card:hover .intro {
+    height: 150px;
+    bottom: 150px;
+  }
+
+  .card:hover {
+    box-shadow: 8px 8px 4px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 925px) {
+  .container {
+    display: grid;
+  }
+
+  body {
+    background-position: 50% 50%;
+  }
+
+  img {
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .card:hover {
+    box-shadow: 8px 8px 4px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  .intro {
+    height: 150px;
+    width: 200px;
+    bottom: 60px;
+    padding: 6px;
+    position: relative;
+  }
+
+  .card:hover .intro {
+    height: 150px;
+    bottom: 120px;
+  }
+
+}
+
+@media (min-width: 1500px) {
+
+  .intro {
+    height: 150px;
+    width: 250px;
+    bottom: 100px;
+    padding: 6px;
+    position: relative;
+  }
+
+  .card:hover .intro {
+    height: 150px;
+    bottom: 150px;
+  }
+
+  .card:hover {
+    box-shadow: 8px 8px 4px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+  }
+
+  .intro {
+    height: 200px;
+    width: 250px;
+    bottom: 10px;
+    padding: 6px;
+    position: relative;
+  }
+
+  .card:hover .intro {
+    height: 150px;
+    bottom: 150px;
+  }
+
+  .card:hover {
+    box-shadow: 8px 8px 4px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    display: flex;
+  }
+
+  .intro {
+    height: 200px;
+    width: 250px;
+    bottom: 10px;
+    padding: 6px;
+    position: relative;
+  }
+
+  .card:hover .intro {
+    height: 150px;
+    bottom: 150px;
+  }
+
+  .card:hover {
+    box-shadow: 8px 8px 4px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    display: flex;
+  }
+
+  .intro {
+    height: 200px;
+    width: 250px;
+    bottom: 10px;
+    padding: 6px;
+    position: relative;
+  }
+
+  .card:hover .intro {
+    height: 150px;
+    bottom: 150px;
+  }
+
+  .card:hover {
+    box-shadow: 8px 8px 4px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+}
